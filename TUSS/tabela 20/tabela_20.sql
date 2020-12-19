@@ -1,3 +1,14 @@
+CREATE TABLE `ea_opme` (
+	`codigo` VARCHAR(50) NOT NULL COLLATE 'utf8_general_ci',
+	`descricao` VARCHAR(1500) NOT NULL COLLATE 'utf8_general_ci',
+	`fabricante` VARCHAR(1000) NOT NULL COLLATE 'utf8_general_ci',
+	`tabela` INT(11) NULL DEFAULT NULL
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
+
+
 INSERT INTO `ea_opme` (`codigo`, `descricao`, `fabricante`, `tabela`) VALUES ('90051505', 'REOPRO 2 MG/ML SOL INJ CT FA VD INC X 5 ML', 'ELI LILLY DO BRASIL LTDA', 20);
 INSERT INTO `ea_opme` (`codigo`, `descricao`, `fabricante`, `tabela`) VALUES ('90403525', 'REOPRO 2 MG/ML SOL INJ CT FA VD INC X 5 ML', 'JANSSEN-CILAG FARMACÊUTICA LTDA', 20);
 INSERT INTO `ea_opme` (`codigo`, `descricao`, `fabricante`, `tabela`) VALUES ('90398645', 'ACETATO DE ABIRATERONA 250 MG COM REV CT FR PLAS OPC X 30', 'DR. REDDYS FARMACÊUTICA DO BRASIL LTDA', 20);
